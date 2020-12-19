@@ -127,7 +127,7 @@ public void btnCalculateStage3_click(GButton source, GEvent event) { //_CODE_:bt
   if(buildingHeight >= 20 && buildingHeight <= 850){
     time = sqrt((2 * -buildingHeight)/(-9.81));
     velocity = -9.81 * time;
-    lblResponseStage3.setText("El tiempo es " + nf(time, 0, 2) + "s," + " y la velocidad final es " + nf(velocity, 0, 2) + "m/s.");
+    lblResponseStage3.setText("El tiempo que tarda en llegar al suelo es " + nf(time, 0, 2) + "s," + " y la velocidad final es " + nf(velocity, 0, 2) + "m/s.");
     lblFormulaPart1Stage3.setText("t = √(2·y)/a => t = √(2·-"+ buildingHeight + "m)/"+ "-9.81" +"m/s2 = " + nf(time, 0, 2) + "s.");  
     lblFormulaPart2Stage3.setText("v = a · t  => v = "+ "-9.81" + " · " + time + "s = " + nf(velocity, 0, 2)  + "m/s.");
   } else {
@@ -153,7 +153,7 @@ public void btnCalculateStage4_click(GButton source, GEvent event) { //_CODE_:bt
   if(height >= 5 && height <= 900){
     time = sqrt((2 * -height)/gravity);
     finalVelocity = gravity * time;
-    lblResponseStage4.setText("El tiempo es " + nf(time, 0, 2) + "s y la velocidad final es " + nf(finalVelocity, 0, 2) + "m/s.");
+    lblResponseStage4.setText("El tiempo que tarda en llegar al suelo es " + nf(time, 0, 2) + "s y la velocidad final es " + nf(finalVelocity, 0, 2) + "m/s.");
     lblFormulaPart1Stage4.setText("t = √(2·y)/a => t = √(2·-" + height + "m)/"+gravity+"m/s2 = " + nf(time, 0, 2) + "s.");
     lblFormulaPart2Stage4.setText("v = a · t  => v = " + gravity + " · " + time + "s = " + nf(finalVelocity, 0, 2)  + "m/s.");
   } else {
